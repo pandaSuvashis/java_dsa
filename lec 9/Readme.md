@@ -197,3 +197,248 @@ Practice regularly. Arrays are the **foundation of Data Structures** — masteri
 Your Java practice project 🚀
 
 ---
+
+# 📚 Java 2D Arrays - Complete Guide
+
+## 📌 Overview
+
+This project demonstrates the fundamentals and important operations of **2D arrays in Java**.
+It covers traversal, matrix operations, searching, and commonly asked interview problems.
+
+This is useful for:
+
+* Beginners learning arrays
+* Students preparing for **DSA**
+* Interview practice
+
+---
+
+## 🧠 What is a 2D Array?
+
+A **2D array** is an array of arrays, used to store data in a **tabular format (rows × columns)**.
+
+👉 Example:
+
+```java
+int[][] arr = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
+```
+
+This represents a **3 × 3 matrix**.
+
+---
+
+## ⚙️ Key Concepts
+
+* `arr.length` → number of rows
+* `arr[i].length` → number of columns
+* Access element → `arr[i][j]`
+
+---
+
+## 🏗️ Concepts Covered in Code
+
+---
+
+### 🔹 1. Traversing a 2D Array
+
+```java
+for (int i = 0; i < arr.length; i++) {
+    for (int j = 0; j < arr[i].length; j++) {
+        System.out.print(arr[i][j] + " ");
+    }
+}
+```
+
+---
+
+### 🔹 2. Sum of All Elements
+
+```java
+int sum = 0;
+for (int[] row : arr) {
+    for (int num : row) {
+        sum += num;
+    }
+}
+```
+
+---
+
+### 🔹 3. Maximum Element
+
+```java
+int max = arr[0][0];
+for (int[] row : arr) {
+    for (int num : row) {
+        if (num > max) max = num;
+    }
+}
+```
+
+---
+
+### 🔹 4. Row-wise Sum
+
+```java
+for (int i = 0; i < arr.length; i++) {
+    int sum = 0;
+    for (int j = 0; j < arr[i].length; j++) {
+        sum += arr[i][j];
+    }
+}
+```
+
+---
+
+### 🔹 5. Column-wise Sum
+
+```java
+for (int j = 0; j < arr[0].length; j++) {
+    int sum = 0;
+    for (int i = 0; i < arr.length; i++) {
+        sum += arr[i][j];
+    }
+}
+```
+
+---
+
+### 🔹 6. Transpose of Matrix
+
+```java
+int[][] t = new int[cols][rows];
+
+for (int i = 0; i < rows; i++) {
+    for (int j = 0; j < cols; j++) {
+        t[j][i] = arr[i][j];
+    }
+}
+```
+
+👉 Converts rows into columns.
+
+---
+
+### 🔹 7. Diagonal Elements
+
+#### Primary Diagonal:
+
+```java
+arr[i][i]
+```
+
+#### Secondary Diagonal:
+
+```java
+arr[i][n - i - 1]
+```
+
+---
+
+### 🔹 8. Spiral Traversal (Important)
+
+Traverse matrix in spiral order:
+
+* Top row → Right column → Bottom row → Left column
+
+Used in many **interview questions**.
+
+---
+
+### 🔹 9. Searching in Matrix
+
+```java
+for (int[] row : arr) {
+    for (int num : row) {
+        if (num == key) return true;
+    }
+}
+```
+
+---
+
+## ▶️ How to Run
+
+### Step 1: Compile
+
+```bash
+javac TwoDArrays.java
+```
+
+### Step 2: Run
+
+```bash
+java TwoDArrays
+```
+
+---
+
+## 📊 Time Complexity
+
+| Operation        | Complexity |
+| ---------------- | ---------- |
+| Traversal        | O(n × m)   |
+| Sum / Max        | O(n × m)   |
+| Row/Column Sum   | O(n × m)   |
+| Transpose        | O(n × m)   |
+| Spiral Traversal | O(n × m)   |
+| Search           | O(n × m)   |
+
+---
+
+## 🎯 Learning Outcomes
+
+After completing this project:
+
+* You understand how 2D arrays work
+* You can perform matrix operations
+* You can solve basic and intermediate DSA problems
+
+---
+
+## 🚀 Next Topics
+
+* Matrix Multiplication
+* Rotate Matrix (90°)
+* Search in Sorted Matrix
+* Prefix Sum (2D)
+
+---
+
+## 💡 Pro Tip
+
+Every 2D array problem is based on:
+
+```
+row loop + column loop
+```
+
+Master nested loops and you’ll unlock most matrix problems.
+
+---
+
+## 👨‍💻 Author
+
+Your Java DSA practice 🚀
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
