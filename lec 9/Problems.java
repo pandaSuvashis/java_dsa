@@ -24,6 +24,8 @@ public class Problems {
         return true;
     }
 
+
+
     static void countEvenOdd(int[] arr) {
         int even = 0, odd = 0;
 
@@ -140,7 +142,7 @@ public class Problems {
 
     public static void main(String args[]) {
 
-        int arr[] = { 1, 20, 0, 50, 70, 1, 202, 00, 10, 5 };
+        int arr[] = { 10,20,30,40 };
 
         System.out.println("Second Largest: " + secondLargest(arr));
         System.out.println("Is Sorted: " + isSorted(arr));
@@ -148,6 +150,7 @@ public class Problems {
         findDuplicates(arr);
         rotateRight(arr);
         printArray(arr);
+        System.out.println();
         System.out.println("Binary Search: " + binarySearch(arr, 5));
         moveZeros(arr);
         printArray(arr);
