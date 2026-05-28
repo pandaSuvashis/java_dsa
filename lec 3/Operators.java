@@ -23,7 +23,7 @@ public class Operators {
 
         // 3. Logical Operators
         boolean x = true, y = false;
-            System.out.println("x : "+ x +"   y : "+y);
+        System.out.println("x : "+ x +"   y : "+y);
         System.out.println("\nLogical Operators:");
         System.out.println("x && y: " + (x && y));
         System.out.println("x || y: " + (x || y));
@@ -56,7 +56,7 @@ public class Operators {
 
         // 6. Bitwise Operators
         int p = 6, q = 3; // 6=110, 3=011
-        System.out.println("p : "+ p +"q : "+q);
+        System.out.println("p : "+ p +"  q : "+q);
         System.out.println("\nBitwise Operators:");
         System.out.println("p & q: " + (p & q));
         System.out.println("p | q: " + (p | q));
