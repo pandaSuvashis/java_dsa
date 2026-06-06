@@ -7,13 +7,14 @@ public class Qeueueueu {
 
         LinkedList<Integer> queue = new LinkedList<>();
 
-        queue.offer(100);
+        queue.offer(100); //add the specific element at the end of the linked list 
+        
         queue.offer(200);
         queue.offer(300);
 
         System.out.println("Queue: " + queue);
 
-        System.out.println("poll(): " + queue.poll());
+        System.out.println("poll(): " + queue.poll()); //returns and remove the last element of the list 
 
         System.out.println("Queue After poll(): " + queue);
 
