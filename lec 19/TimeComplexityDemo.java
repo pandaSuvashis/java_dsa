@@ -56,6 +56,7 @@ public class TimeComplexityDemo {
     public static void main(String[] args) {
 
         int[] arr = {5, 2, 8, 1, 9, 3};
+        
 
         System.out.println("===== O(1) =====");
         constantTime(arr);
