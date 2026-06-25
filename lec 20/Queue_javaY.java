@@ -2,7 +2,7 @@ import java.util.Queue;
 import java.util.LinkedList;
 import java.util.Iterator;
 
-public class Queue_java {
+public class Queue_javaY {
 
     public static void main(String[] args) {
 
