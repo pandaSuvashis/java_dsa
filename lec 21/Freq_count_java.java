@@ -40,9 +40,6 @@ public class Freq_count_java {
 
 
     } 
-
-
-
     public static void main(String[] args) {
     int arr[] = {1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,5,5,5,5,5,55,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,7,5,5,85,5,5,5,826};
         System.out.println("The sum  of the frequency is : "+OnceFreq(arr));
