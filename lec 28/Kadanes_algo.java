@@ -1,5 +1,3 @@
-import java.io.Console;
-
 public class Kadanes_algo{
 
     static void MaximumSubArraySum(int arr[]){
