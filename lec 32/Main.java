@@ -24,6 +24,8 @@ public class Main{
     public static void main(String args[]){
         System.out.println("Binary search!!!");
         System.out.println();
+
+        //binary search   
         int arr[] = {1,2,3,4,5,6,7,8,9};
         printArray(arr);
         System.out.println();
